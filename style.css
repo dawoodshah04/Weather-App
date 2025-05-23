@@ -1,0 +1,132 @@
+*{
+    font-family: monospace;
+}
+body {
+    background: #b474da;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#weather-container {
+    background: rgba(255, 255, 255, 0.3);
+    max-width: 500px;
+    padding: 80px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+h2,
+label,
+p {
+    color: #fff;
+    margin: 8px 0;
+}
+
+/* Container for the search input and button */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-container input {
+    width: 200px;
+    padding: 8px;
+    font-family: monospace;
+    border-radius: 10px 0 0 10px;
+    /* Rounded left edges */
+    border: 1px solid white;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-container button {
+    background: #a077a5;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    /* Rounded right edges */
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.search-container button:hover {
+    background: purple;
+}
+
+#temp-div p {
+    font-size: 60px;
+    margin-top: 30px;
+}
+
+#weather-info {
+    font-size: 20px;
+}
+
+#weather-icon {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 10px;
+    margin-bottom: 0;
+    display: none;
+}
+
+#hourly-forecast {
+    margin-top: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    color: white;
+}
+
+.hourly-item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+#hourly-heading {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.getWeatherforLocation{
+    border-radius: 7px;
+    height: 50px;
+    background-color: gray;
+    color: white;
+    border: none; 
+    box-shadow: indigo;  
+    cursor: pointer; 
+    font-size: 12px;
+    margin-top: auto;
+    padding: 10px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.getWeatherforLocation:hover{
+    background: purple;
+}
